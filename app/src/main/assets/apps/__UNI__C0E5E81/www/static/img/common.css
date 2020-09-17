@@ -1,0 +1,114 @@
+/* 公共的通用样式 !!!不涉及项目里的单独样式 及 框架样式的二次修改 */
+body {
+	background-color: #f9f9f9;
+	/*默认背景颜色*/
+}
+
+/* 字体颜色 */
+.comn-c-fff{
+	color: #fff;
+}
+.comn-c-333 {
+	color: #333!important;
+}
+
+.comn-c-666 {
+	color: #666!important;
+}
+
+.comn-c-999 {
+	color: #999!important;
+}
+.comn-c-ed{
+	color: #ededed!important;
+}
+
+/* 背景颜色 */
+.comn-b-333 {
+	background-color: #333;
+}
+
+.comn-b-666 {
+	background-color: #666;
+}
+
+.comn-b-999 {
+	background-color: #999;
+}
+
+.comn-b-ddd {
+	background-color: #ddd;
+}
+
+.comn-b-ededed {
+	background-color: #ededed;
+}
+.comn-b-fff{
+	background-color: #fff;
+}
+
+/* 字体,粗细,间距 公用 */
+.comn-f-12 {
+	font-size: 12px!important;
+}
+
+.comn-f-14 {
+	font-size: 14px!important;
+}
+
+.comn-f-15 {
+	font-size: 15px!important;
+}
+
+.comn-f-16 {
+	font-size: 16px!important;
+}
+.comn-f-18 {
+	font-size: 18px!important;
+}
+
+.comn-f-weight {
+	font-weight: bold;
+}
+
+.comn-letter-2 {
+	letter-spacing: 2px;
+}
+
+
+/* 文本对齐 */
+.comn-t-center {
+	text-align: center;
+}
+
+.comn-t-right {
+	text-align: right;
+}
+
+.comn-t-left {
+	text-align: left;
+}
+
+
+/* margin方向 */
+.comn-m-t-0{
+	margin-top: 0px!important;
+}
+.comn-m-t-5{
+	margin-top: 5px!important;
+}
+.comn-m-t-10{
+	margin-top: 5px!important;
+}
+.comn-m-t-20{
+	margin-top: 20px!important;
+}
+
+
+/* padding方向 */
+.comn-p-10{
+	padding: 10px;
+}
+.comn-p-r-5{
+	padding-right: 5px;
+}

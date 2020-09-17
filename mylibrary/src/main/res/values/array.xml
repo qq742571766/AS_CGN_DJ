@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="model_test">测试模式</string>
+    <string name="model_show">演示模式</string>
+    <string-array name="list_ai_top">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="list_ai_detect_net">
+        <item>人脸模型</item>
+        <item>检测模型</item>
+        <item>分类模型</item>
+        <item>QR Scanner</item>
+    </string-array>
+
+    <string-array name="list_ai_detect_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="list_ai_detect_mode">
+        <item>MD</item>
+        <item>MDR</item>
+        <item>DT</item>
+        <item>DTR</item>
+        <item>CAL</item>
+    </string-array>
+
+    <string-array name="list_ai_detect_mode_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="list_ai_video_format">
+        <item>1280/720</item>
+        <item>1920/1080</item>
+    </string-array>
+
+    <string-array name="list_ai_video_format_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="list_camera_fps_format">
+        <item>1280/720/15</item>
+        <item>1280/720/30</item>
+        <item>1920/1080/15</item>
+    </string-array>
+
+</resources>

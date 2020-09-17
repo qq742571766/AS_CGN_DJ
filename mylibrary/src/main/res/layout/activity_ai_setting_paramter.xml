@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--模型类型-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_model_type"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_common_type" />
+
+        </RelativeLayout>
+
+
+        <!--数据来源-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_frame_src"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_frame_src" />
+
+        </RelativeLayout>
+
+        <!--是否预处理-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_pre_process"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_is_pre_process" />
+
+        </RelativeLayout>
+
+        <!--shave count-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_shave_count"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:hint="cpu(1-12)"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/cpu_count" />
+
+        </RelativeLayout>
+
+        <!--cache memory size-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_cache_memory" />
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_cache_memory_size"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:hint="1-25"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+        </RelativeLayout>
+
+        <!--scratch memory size-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_scratch_memory"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890"
+                android:hint="1-100"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_scratch_memory" />
+
+        </RelativeLayout>
+
+        <!--input format data-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_input_format"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_input_data_format" />
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_input_width"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="1234567890"
+                android:hint="width"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_input_height"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/et_input_data_format"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:digits="1234567890"
+                android:hint="height"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_input_data_format"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:digits="1234567890"
+                android:hint="format"
+                android:inputType="number"
+                android:padding="10dp" />
+        </LinearLayout>
+
+
+        <!--output format data-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="@string/str_output_data_format" />
+
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_output_width"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/et_input_height"
+                android:layout_toRightOf="@+id/tv_input_format"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:digits="1234567890"
+                android:hint="width"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_output_height"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/et_input_data_format"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:digits="1234567890"
+                android:hint="height"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_output_data_format"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:digits="1234567890"
+                android:hint="format"
+                android:inputType="number"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!--rgbmean-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_rgb_mean"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="RgbMean" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_rgbR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789."
+                android:hint="R(0-255)"
+                android:inputType="numberDecimal" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_rgbG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789."
+                android:hint="G(0-255)"
+                android:inputType="numberDecimal" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_rgbB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789."
+                android:hint="B(0-255)"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+        <!--stdvalue-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_textview_padding_10"
+                android:text="StdValue" />
+
+            <com.llvision.singleshotdetector.ui.MyConfigTextView
+                android:id="@+id/et_std_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:digits="1234567890."
+                android:hint="stdvalue"
+                android:inputType="numberDecimal"
+                android:text="1.0" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="完成" />
+    </LinearLayout>
+
+
+</ScrollView>

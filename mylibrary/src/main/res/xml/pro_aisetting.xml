@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="用户输入数据">
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="检测网络选择"
+            android:entries="@array/list_ai_detect_net"
+            android:entryValues="@array/list_ai_detect_value"
+            android:key="aiSetting_detect_net"
+            android:summary="由用户给图片或者YUV图片,检测结果回来后，选择的解析方式"
+            android:title="切换检测网络" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="aiSetting_save_camera_frame"
+            android:summary="公有模型数据来源是Camera时,是否保存流"
+            android:title="视频流" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="QR参数修改">
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="选择分辨率"
+            android:entries="@array/list_ai_video_format"
+            android:entryValues="@array/list_ai_video_format_value"
+            android:key="aiSetting_qr_format"
+            android:summary="1280x720"
+            android:title="选择分辨率" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="人脸参数修改">
+
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="选择模式"
+            android:entries="@array/list_ai_detect_mode"
+            android:entryValues="@array/list_ai_detect_mode_value"
+            android:key="aiSetting_detect_mode"
+            android:summary="DTR"
+            android:title="当前模式" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="选择视频格式"
+            android:entries="@array/list_ai_video_format"
+            android:entryValues="@array/list_ai_video_format_value"
+            android:key="aiSetting_video_format"
+            android:summary="1280x720"
+            android:title="视频格式" />
+
+        <SwitchPreference
+            android:key="aiSetting_save_picture"
+            android:summary="保存内容为送检整图YUV图片"
+            android:title="DTR图片保存" />
+        <SwitchPreference
+            android:key="aiSetting_save_face_picture"
+            android:summary="保存抠出人脸照片照片格式为JPG"
+            android:title="人脸图片" />
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="top值选择"
+            android:entries="@array/list_ai_top"
+            android:entryValues="@array/list_ai_top"
+            android:key="aiSetting_face_size"
+            android:summary="识别结果显示个数：3"
+            android:title="识别结果" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:key="aiSetting_definition"
+            android:selectAllOnFocus="true"
+            android:summary="人脸清晰度：0"
+            android:title="清晰度" />
+        <EditTextPreference
+            android:defaultValue="35"
+            android:digits="0123456789"
+            android:inputType="numberDecimal"
+            android:key="aiSetting_face_yaw"
+            android:selectAllOnFocus="true"
+            android:summary="人脸角度：35"
+            android:title="人像角度" />
+        <EditTextPreference
+            android:defaultValue="80"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:key="aiSetting_face_width"
+            android:selectAllOnFocus="true"
+            android:summary="人脸宽度修改默认值：80"
+            android:title="人脸宽度" />
+        <EditTextPreference
+            android:defaultValue="80"
+            android:digits=".0123456789"
+            android:inputType="number"
+            android:key="aiSetting_face_cosd"
+            android:selectAllOnFocus="true"
+            android:summary="人脸识别相似度:80,范围0~100"
+            android:title="相似度修改" />
+
+        <EditTextPreference
+            android:defaultValue="1"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:key="aiSetting_face_detect_interval"
+            android:selectAllOnFocus="true"
+            android:summary="检查间隔：1"
+            android:title="检测间隔" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_show_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/device_disconnect"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/id_permission_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="permission" />
+
+        <Button
+            android:id="@+id/id_display_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Test" />
+
+        <Button
+            android:id="@+id/id_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera Test" />
+
+
+        <Button
+            android:id="@+id/id_sensor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor Test" />
+
+        <Button
+            android:id="@+id/id_key_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Test" />
+
+        <Button
+            android:id="@+id/id_push_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Push Test" />
+        <Button
+            android:id="@+id/id_deviceinfo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DeviceInfo Test" />
+
+
+
+        <Button
+            android:id="@+id/id_audio_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Echo Cancelation:MUSIC_MODE"/>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</ScrollView>

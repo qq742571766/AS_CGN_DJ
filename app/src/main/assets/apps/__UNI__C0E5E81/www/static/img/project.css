@@ -1,0 +1,433 @@
+/* 指定项目的通用样式 */
+
+/* ==== 标准色 ==== 用于导航栏,重要性文字 按钮以及一级icon (字体与背景)*/
+
+/* 深蓝色 */
+.proj-c-004a86 {
+	color: #004a86;
+}
+
+.proj-b-004a86 {
+	background-color: #004a86;
+}
+
+/* 红橙色 */
+.proj-c-ed6c00 {
+	color: #ed6c00;
+}
+
+.proj-b-ed6c00 {
+	background-color: #ed6c00;
+}
+
+/* ==== 辅助色 ==== 用于按钮,状态文字,提醒图标 (字体与背景)*/
+
+/* 字体的颜色 */
+.proj-c-0069ac {
+	color: #0069ac;
+	/* 蓝色 */
+}
+
+.proj-c-00aae8 {
+	color: #00aae8;
+	/* 宝蓝色 */
+}
+
+.proj-c-8fc31f {
+	color: #8fc31f;
+	/* 若绿色 */
+}
+
+.proj-c-dad900 {
+	color: #dad900;
+	/* 黄绿色 */
+}
+
+.proj-c-f7ab00 {
+	color: #f7ab00;
+	/* 山吹色(偏棕橙) */
+}
+
+.proj-c-ffd900 {
+	color: #ffd900;
+	/* 向日葵色(偏黄带点棕) */
+}
+
+/* 背景的颜色 */
+.proj-b-0069ac {
+	background-color: #0069ac;
+	/* 蓝色 */
+}
+
+.proj-b-00aae8 {
+	background-color: #00aae8;
+	/* 宝蓝色 */
+}
+
+.proj-b-8fc31f {
+	background-color: #8fc31f;
+	/* 若绿色 */
+}
+
+.proj-b-dad900 {
+	background-color: #dad900;
+	/* 黄绿色 */
+}
+
+.proj-b-f7ab00 {
+	background-color: #f7ab00;
+	/* 山吹色(偏棕橙) */
+}
+
+.proj-b-ffd900 {
+	background-color: #ffd900;
+	/* 向日葵色(偏黄带点棕) */
+}
+
+
+/* 其余的样式 */
+.my-top {
+	/* background: -webkit-linear-gradient(#6690ff, #5b91fe, #5194ff); */
+	/* background: -webkit-linear-gradient(#344e92, #8aa2d1, #88aeeb); */
+	background: #004a86;
+	height: 140px;
+}
+
+/* 框架规范 start */
+
+/* 列表盒子 */
+.proj {
+	position: relative;
+}
+
+.proj-nodata {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.proj-nodata image {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.proj-nodata-text {
+	color: #999;
+	text-align: center;
+	font-size: 15px;
+}
+
+.proj .proj-list+.proj-nodata {
+	display: none;
+}
+
+.proj-list {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 15px 10px 10px;
+	background: white;
+	margin-top: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* .proj-list:hover {
+	background: #efefef!important;
+} */
+
+/* 列表盒子的标题 */
+.proj-list-title {
+	display: flex;
+	padding: 0px 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 列表标题里的图片默认 */
+.proj-list-title .proj-list-img-del {
+	width: 43px !important;
+	height: 43px !important;
+}
+
+.proj-list-img-25 {
+	width: 25px !important;
+	height: 25px !important;
+}
+
+.proj-list-img-65 {
+	width: 65px !important;
+	height: 65px !important;
+}
+
+/* 列表标题文本 */
+.proj-list-title .proj-title {
+	width: 80px;
+	color: #666666;
+}
+
+.proj-list-title image {
+	width: 100%;
+	height: 100%;
+}
+
+.proj-w-100 {
+	width: 100px !important;
+}
+
+/* 列表内容 */
+.proj-list-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: stretch;
+	padding-left: 5px;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.proj-list-end {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+
+/* flex布局 */
+.proj-flex {
+	display: flex;
+}
+
+.proj-flex-1 {
+	flex: 1;
+}
+
+/* 标签 */
+.proj-label {
+	border: 1px solid #ddd;
+	padding: 1px 4px;
+	border-radius: 5px;
+	margin: 0 5px;
+	color: #999;
+	font-size: 12px;
+}
+
+/* border标准 */
+.proj-border-l-5 {
+	border-left: 5px solid #6690FF;
+}
+
+/* 其他文本 */
+.proj-text {
+	font-size: 12px;
+	color: #999;
+}
+
+/* 箭头 */
+.proj-arrowright {
+	padding-right: 25px;
+}
+
+.proj-arrowright:before {
+	content: '›';
+	font-size: 24px;
+	color: #d9d9d9;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-55%);
+}
+
+/* 单行省略 */
+.proj-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* 搜索框 */
+.proj-p-top-search {
+	padding-top: 48px;
+}
+.proj-search {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 999;
+	background: #fff;
+	padding: 5px 10px;
+}
+
+.proj-search-2 {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+	padding: 5px 10px;
+}
+
+.proj-search-box {
+	display: flex;
+	padding: 5px 40px 5px 5px;
+	/* width: 100%; */
+	background: #f8f8f8;
+	border-radius: 5px;
+	flex: 1;
+}
+
+.proj-search-input {
+	padding-left: 25px;
+	width: 100%;
+}
+
+.proj-icon-search {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 12px;
+}
+
+.proj-search-btn {
+	margin: 0 0 0 5px;
+	/* border: 1px solid #efefef; */
+	background: #00AAE8;
+	color: white;
+	padding: 5px 10px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.proj-search-btn:active {
+	background: #0079FF;
+	color: white;
+}
+
+.proj-icon-clear {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	padding: 0 5px;
+	top: 12px;
+	right: 70px;
+}
+
+/* 必填 */
+.proj-required {
+	padding-left: 10px;
+}
+
+.proj-required:after {
+	content: '*';
+	color: red;
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	/* top: 50%;
+	left: 15px;
+	transform: translateY(-40%); */
+}
+
+/* 背景全白样式 */
+.proj-view-white {
+	overflow: auto;
+	min-height: 500px;
+	background: white;
+	padding: 10px;
+	position: relative;
+	border-top: 1px solid #EFEFEF;
+}
+
+/* 弹出层popup */
+.proj-popup {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.proj-popup-body {
+	margin: 30px 20px 20px 20px;
+	background: #efefef;
+	max-height: 440px;
+	overflow: auto;
+	z-index: 999;
+	border-radius: 10px;
+}
+
+.proj-popup-close {
+	display: flex;
+	justify-content: center;
+}
+
+.proj-popup-close image {
+	width: 50px;
+	height: 50px;
+}
+
+.proj-bold {
+	font-weight: bold;
+}
+
+/* btn按钮 */
+.proj-btn {
+	text-align: center;
+	border: 1px solid #efefef;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/* 框架规范 end */
+
+
+/* ================ 申请类别,申请审批 start ================ */
+.item-bigOne-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px;
+	background: #fff;
+	margin-top: 10px;
+	position: relative;
+	border-radius: 5px;
+}
+.item-bigOne-tip {
+	margin-left: 20px;
+	color: orange;
+	font-size: 20px;
+	text-align: right;
+	margin-top: -7px;
+}
+.item-bigOne-img {
+	background: #f9f9f9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.item-bigOne-img image {
+	width: 30px;
+	height: 30px;
+}
+/* ================ 申请类别,申请审批 end ================ */
+
+.proj-p-all-10-20 {
+	padding: 10px 20px;
+}
+.proj-p-5-10{
+	padding: 5px 10px;
+}

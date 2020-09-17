@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_back_running_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Background process switch" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_acc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="acceleration switch" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_gravity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="gravity switch" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_magnetometer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="magnetometer switch" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_gyrosope_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="gyroscope switch" />
+
+    <!--<android.support.v7.widget.SwitchCompat-->
+    <!--android:id="@+id/id_sensor_quatenion_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="quaternion switch"/>-->
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_temperature_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="temperature switch" />
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_light_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="light switch" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/id_sensor_orientation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="orientation switch" />
+
+    <Button
+        android:id="@+id/id_btn_get_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get Switch" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/id_show_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minLines="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加速度" />
+
+            <TextView
+                android:id="@+id/id_show_acc_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/id_show_acc_y"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/id_show_acc_z"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/id_gravity_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gravity" />
+
+            <TextView
+                android:id="@+id/id_show_gravity_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Magnetometer" />
+
+            <TextView
+                android:id="@+id/id_show_magnetometer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gyroscope" />
+
+            <TextView
+                android:id="@+id/id_show_gyroscope_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="温度" />
+
+            <TextView
+                android:id="@+id/id_show_temperatrue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="光感" />
+
+            <TextView
+                android:id="@+id/id_show_light_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:text="欧拉角" />
+
+            <TextView
+                android:id="@+id/id_show_oritation_x"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/id_show_oritation_y"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/id_show_oritation_z"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
